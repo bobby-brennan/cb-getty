@@ -28,7 +28,8 @@
         "question": "What should the query be?",
         "label": "Query",
         "name": "query",
-        "type": "string"
+        "type": "string",
+        "userInput": true
       }, {
         "question": "Do you want Creative or Editorial images?",
         "tip": "Editorial images are for non-commercial use; Creative images can be used in any context.",
