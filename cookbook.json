@@ -22,8 +22,8 @@
     },
     "imageSearch": {
       "label": "Image Search",
-      "actions": ["search-images"],
       "view": "image-search",
+      "data": "search-images",
       "questions": [{
         "question": "What should the query be?",
         "label": "Query",

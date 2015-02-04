@@ -1,17 +1,22 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-      <h2><%- Lucy.variable('answers.query') %></h2>
-    </div>
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+    <h2>Search Results: <%- Lucy.variable('answers.query') %></h2>
   </div>
-  <div class="row">
-    <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-      <%- Lucy.for("image in result.images") %>
-        <div class="row">
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+    <%- Lucy.for("image in result.images") %>
+      <div class="row">
+        <div class="col-xs-6">
           <h4><%- Lucy.variable("image.title") %></h4>
-          <img src="<%- Lucy.variable("image.uri_oembed") %>">
+          <p><%- Lucy.variable("image.caption") %></p>
         </div>
-      <%- Lucy.rof("image in result.images") %>
-    </div>
+        <div class="col-xs-6">
+          <img class="pull-right" src="<%- Lucy.variable("image.display_sizes[0].uri") %>">
+        </div>
+      </div>
+      <hr>
+    <%- Lucy.rof("image in result.images") %>
   </div>
 </div>

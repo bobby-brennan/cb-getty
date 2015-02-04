@@ -7,6 +7,8 @@
 -%>
 <%-
   Lucy.request({
+    method: 'get',
+    returns: 'json',
     protocol: 'https',
     domain: 'api.gettyimages.com',
     path: 'v3/search/images' + pathSuffix,
@@ -14,7 +16,8 @@
       'Api-Key': Lucy.answer('apiKey'),
     },
     query: {
-      'phrase': {answer: 'query'}
+      'phrase': {answer: 'query'},
+      'page_size': 10
     }
   })
 %>
