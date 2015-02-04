@@ -1,0 +1,46 @@
+{
+  "name": "Kaltura",
+  "recipes": {
+    "setup": {
+      "questions": [{
+        "question": "OK! I just need your Getty Connect API keys to get started",
+        "tip": "You can find your info at https://developer.gettyimages.com/apps/mykeys",
+        "label": "API Keys",
+        "type": "form",
+        "inputs": [{
+           "label": "Key",
+           "name": "apiKey",
+           "type": "string",
+           "required": true
+        }, {
+           "label": "Secret",
+           "name": "apiSecret",
+           "type": "string",
+           "required": true
+        }]
+      }]
+    },
+    "imageSearch": {
+      "label": "Image Search",
+      "actions": ["search-images"],
+      "view": "image-search",
+      "questions": [{
+        "question": "What should the query be?",
+        "label": "Query",
+        "name": "query",
+        "type": "string"
+      }, {
+        "question": "Do you want Creative or Editorial images?",
+        "tip": "Editorial images are for non-commercial use; Creative images can be used in any context.",
+        "label": "Creative/Editorial",
+        "name": "creativeOrEditorial",
+        "type": "buttonSet",
+        "values": {[
+          {"label": "Both", "value": "both"},
+          {"label": "Creative", "value": "creative"},
+          {"label": "Editorial", "value": "editorial"}
+        ]}
+      }
+    }
+  }
+}
