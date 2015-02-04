@@ -35,7 +35,7 @@
         "label": "Creative/Editorial",
         "name": "creativeOrEditorial",
         "type": "buttonSet",
-        "values": [
+        "choices": [
           {"label": "Both", "value": "both"},
           {"label": "Creative", "value": "creative"},
           {"label": "Editorial", "value": "editorial"}
