@@ -78,7 +78,8 @@
           {"label": "Multiethnic Group", "value": "multiethnic_group"},
           {"label": "Native American", "value": "native_american_first_nations"},
           {"label": "Pacific Islander", "value": "pacific_islander"},
-          {"label": "South Asian", "value": "south_asian"}
+          {"label": "South Asian", "value": "south_asian"},
+          {"label": "Southeast Asian", "value": "southeast_asian"}
         ]
       }]
     },
