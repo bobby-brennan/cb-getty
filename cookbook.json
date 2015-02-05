@@ -49,6 +49,8 @@
       "data": "search-images",
       "questions": [{
         "question": "How many people should be in the images?",
+        "name": "number_of_people",
+        "label": "Number",
         "type": "multi",
         "default": ["one"],
         "choices": [
@@ -59,10 +61,14 @@
         ]
       }, {
         "question": "Do you want to exclude nudity?",
+        "name": "exclude_nudity",
+        "label": "Nudity",
         "type": "boolean"
       }, {
         "question": "Which ethnicities do you want to include?",
         "tip": "Select none to include all ethnicities",
+        "name": "ethnicity",
+        "label": "Ethnicity",
         "type": "multi",
         "choices": [
           {"label": "Black", "value": "black"},
