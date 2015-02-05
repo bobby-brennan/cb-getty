@@ -51,18 +51,18 @@
         "question": "How many people should be in the images?",
         "type": "multi",
         "default": ["one"],
-        "choices" [{
+        "choices": [
           {"label": "None", "value": "none"},
           {"label": "One", "value": "one"},
           {"label": "Two", "value": "two"},
           {"label": "Group", "value": "group"}
-        }]
+        ]
       }, {
         "question": "Do you want to exclude nudity?",
         "type": "boolean"
       }, {
         "question": "Which ethnicities do you want to include?",
-        "tip": "Select none to include all ethnicities"
+        "tip": "Select none to include all ethnicities",
         "type": "multi",
         "choices": [
           {"label": "Black", "value": "black"},
