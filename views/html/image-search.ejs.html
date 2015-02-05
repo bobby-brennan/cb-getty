@@ -11,6 +11,12 @@
         <div class="col-xs-6">
           <h4><%- Lucy.variable("image.title") %></h4>
           <p><%- Lucy.variable("image.caption") %></p>
+<% if (Lucy.answer('similarImages')) { -%>
+          <a class="btn btn-primary"
+             <%- Lucy.click('similar-images', {imageID: Lucy.variableJS('image.id')}) %>>
+          Similar
+          </a>
+<% } -%>
         </div>
         <div class="col-xs-6">
           <img class="pull-right" src="<%- Lucy.variable("image.display_sizes[0].uri") %>">

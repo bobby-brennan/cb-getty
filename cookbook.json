@@ -42,6 +42,56 @@
           {"label": "Editorial", "value": "editorial"}
         ]
       }]
+    },
+    "peopleSearch": {
+      "label": "Images of People",
+      "view": "image-search",
+      "data": "search-images",
+      "questions": [{
+        "question": "How many people should be in the images?",
+        "type": "multi",
+        "default": ["one"],
+        "choices" [{
+          {"label": "None", "value": "none"},
+          {"label": "One", "value": "one"},
+          {"label": "Two", "value": "two"},
+          {"label": "Group", "value": "group"}
+        }]
+      }, {
+        "question": "Do you want to exclude nudity?",
+        "type": "boolean"
+      }, {
+        "question": "Which ethnicities do you want to include?",
+        "tip": "Select none to include all ethnicities"
+        "type": "multi",
+        "choices": [
+          {"label": "Black", "value": "black"},
+          {"label": "Caucasian", "value": "caucasian"},
+          {"label": "East Asian", "value": "east_asian"},
+          {"label": "Hispanic/Latino", "value": "hispanic_latino"},
+          {"label": "Japanese", "value": "japanese"},
+          {"label": "Middle Eastern", "value": "middle_eastern"},
+          {"label": "Mixed Race Person", "value": "mixed_race_person"},
+          {"label": "Multiethnic Group", "value": "multiethnic_group"},
+          {"label": "Native American", "value": "native_american_first_nations"},
+          {"label": "Pacific Islander", "value": "pacific_islander"},
+          {"label": "South Asian", "value": "south_asian"},
+          {"label": "Southeast Asian", "value": "southeast_asian"}
+        ]
+      }]
+    },
+    "similarImages": {
+      "label": "Similar Images Button",
+      "view": "image-search",
+      "data": "similar-images",
+      "questions": [{
+         "include": "imageSearch",
+         "inputs": {
+           "query": {"userInput": true},
+           "creativeOrEditorial": {"val": "both"},
+           "similarButton": {"val": true}
+         }
+      }]
     }
   }
 }
