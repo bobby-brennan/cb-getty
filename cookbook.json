@@ -86,18 +86,5 @@
         ]
       }]
     },
-    "similarImages": {
-      "label": "Similar Images Button",
-      "view": "image-search",
-      "data": "similar-images",
-      "questions": [{
-         "include": "imageSearch",
-         "inputs": {
-           "query": {"userInput": true},
-           "creativeOrEditorial": {"val": "both"},
-           "similarButton": {"val": true}
-         }
-      }]
-    }
   }
 }
