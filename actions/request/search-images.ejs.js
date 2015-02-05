@@ -1,7 +1,7 @@
 <%
   var pathSuffix = '';
   var type = Lucy.answer('creativeOrEditorial');
-  if (type !== 'both') {
+  if (type && type !== 'both') {
     pathSuffix = '/' + type;
   }
 -%>
