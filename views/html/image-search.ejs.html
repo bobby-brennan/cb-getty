@@ -1,5 +1,8 @@
 <h2>Search Results<%- Lucy.answer('query') ? ': ' + Lucy.variable('answers.query') : '' %></h2>
 <hr>
+<%- Lucy.if('result.result_count == 0') %>
+  No results found.
+<%- Lucy.fi('result.result_count == 0') %>
 <%- Lucy.for("image in result.images") %>
   <div class="row">
     <div class="col-xs-6">
