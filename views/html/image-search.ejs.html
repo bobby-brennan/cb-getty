@@ -1,5 +1,8 @@
 <h2>Search Results<%- Lucy.answer('query') ? ': ' + Lucy.variable('answers.query') : '' %></h2>
 <hr>
+<%- Lucy.if('result.message') %>
+<p><%- Lucy.variable('result.message') %></p>
+<%- Lucy.fi('result.message') %>
 <%- Lucy.if('result.result_count == 0') %>
   No results found.
 <%- Lucy.fi('result.result_count == 0') %>
