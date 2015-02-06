@@ -79,7 +79,7 @@
           {"label": "Japanese", "value": "japanese"},
           {"label": "Middle Eastern", "value": "middle_eastern"},
           {"label": "Mixed Race Person", "value": "mixed_race_person"},
-          {"label": "Multiethnic Group", "value": "arrayethnic_group"},
+          {"label": "Multiethnic Group", "value": "multiethnic_group"},
           {"label": "Native American", "value": "native_american_first_nations"},
           {"label": "Pacific Islander", "value": "pacific_islander"},
           {"label": "South Asian", "value": "south_asian"},
