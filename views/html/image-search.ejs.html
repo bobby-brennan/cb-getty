@@ -1,4 +1,4 @@
-<h2>Search Results: <%- Lucy.variable('answers.query') %></h2>
+<h2>Search Results<%- Lucy.answer('query') ? ': ' + Lucy.variable('answers.query') : '' %></h2>
 <hr>
 <%- Lucy.for("image in result.images") %>
   <div class="row">
