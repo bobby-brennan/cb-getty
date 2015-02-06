@@ -17,11 +17,12 @@
     },
     query: {
       'phrase': {answer: 'query'},
-      'page_size': 10,
+      'specific_people': {answer: 'specific_people'},
       'number_of_people': {join: {answer: 'number_of_people'}, on: ','},
-      'exclude_nudity': {answer: 'exclude_nudity'},
+      'age_of_people': {join: {answer: 'age_of_people'}, on: ','},
       'ethnicity': {join: {answer: 'ethnicity'}, on: ','},
-      'age_of_people': {join: {answer: 'age_of_people'}, on: ','}
+      'exclude_nudity': {answer: 'exclude_nudity'},
+      'page_size': 10,
     }
   })
 %>

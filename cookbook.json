@@ -47,7 +47,13 @@
       "label": "Images of People",
       "view": "image-search",
       "data": "search-images",
-      "questions": [{
+      "questions": [ {
+        "question": "Do you want to search for images of specific people?",
+        "tip": "Names should be comma separated. Try barack_obama or lady_gaga,beyonce",
+        "name": "specific_people",
+        "label": "Names",
+        "type": "string"
+      }, {
         "question": "How many people should be in the images?",
         "name": "number_of_people",
         "label": "Number",
@@ -59,12 +65,6 @@
           {"label": "Two", "value": "two"},
           {"label": "Group", "value": "group"}
         ]
-      }, {
-        "question": "Do you want to search for any specific people?",
-        "tip": "Try barack_obama or lady_gaga",
-        "name": "specific_people",
-        "label": "Names",
-        "type": "string"
       }, {
         "question": "Which ethnicities do you want to include?",
         "tip": "Select none to include all ethnicities",
@@ -78,7 +78,7 @@
           {"label": "Hispanic/Latino", "value": "hispanic_latino"},
           {"label": "Japanese", "value": "japanese"},
           {"label": "Middle Eastern", "value": "middle_eastern"},
-          {"label": "Mixed Race Person", "value": "mixed_race_person"},
+          {"label": "Multiracial Person", "value": "mixed_race_person"},
           {"label": "Multiethnic Group", "value": "multiethnic_group"},
           {"label": "Native American", "value": "native_american_first_nations"},
           {"label": "Pacific Islander", "value": "pacific_islander"},
