@@ -87,5 +87,49 @@
         ]
       }]
     }
+    "imageQuality": {
+      "label": "Image Quality and Size",
+      "view": "image-search",
+      "data": "search-images",
+      "questions": [{
+        "question": "Which filetypes do you want to include",
+        "name": "file_types",
+        "label": "File types",
+        "type": "array",
+        "choices": [
+          {"label": ".eps", "value": "eps"},
+          {"label": ".jpg", "value": "jpg"},
+          {"label": ".gif", "value": "gif"},
+          {"label": ".png", "value": "png"},
+        ]
+      }, {
+        "question": "How should the images be oriented?",
+        "name": "orientations",
+        "label": "Orientations",
+        "type": "array",
+        "choices": [
+          {"label": "Horizontal", "value": "Horizontal"},
+          {"label": "Vertical", "value": "Vertical"},
+          {"label": "Square", "value": "Square"},
+          {"label": "Panoramic Horizontal", "value": "PanoramicHorizontal"},
+          {"label": "Panoramic Vertical", "value": "PanoramicVertical"},
+        ]
+      }, {
+        "question": "Do you want to only include Prestige content?",
+        "tip": "Prestige content is created by award-winning photographers and art directors and curated by our leading editors.",
+        "label": "Prestige only",
+        "name": "prestige_content_only",
+        "type": "boolean"
+      }, {
+        "question": "What kind of graphical styles do you want?",
+        "label": "Graphical Style",
+        "type": "array",
+        "choices": [
+          {"label": "Fine Art", "value": "fine_art"},
+          {"label": "Illustration", "value": "illustration"},
+          {"label": "Photography", "value": "photography"},
+        ]
+      }]
+    }
   }
 }
