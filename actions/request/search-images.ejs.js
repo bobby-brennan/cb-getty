@@ -22,6 +22,10 @@
       'age_of_people': {join: {answer: 'age_of_people'}, on: ','},
       'ethnicity': {join: {answer: 'ethnicity'}, on: ','},
       'exclude_nudity': {answer: 'exclude_nudity'},
+      'file_types': {join: {answer: 'file_types'}, on: ','},
+      'graphical_styles': {join: {answer: 'graphical_styles'}, on: ','},
+      'orientations': {join: {answer: 'orientations'}, on: ','},
+      'prestige_content_only': {answer: 'prestige_content_only'},
       'page_size': 10,
     }
   })

@@ -122,7 +122,8 @@
         "type": "boolean"
       }, {
         "question": "What kind of graphical styles do you want?",
-        "label": "Graphical Style",
+        "label": "Graphical Styles",
+        "name": "graphical_styles",
         "type": "array",
         "choices": [
           {"label": "Fine Art", "value": "fine_art"},
