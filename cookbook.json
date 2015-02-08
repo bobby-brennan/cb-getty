@@ -86,7 +86,7 @@
           {"label": "Southeast Asian", "value": "southeast_asian"}
         ]
       }]
-    }
+    },
     "imageQuality": {
       "label": "Image Quality and Size",
       "view": "image-search",
@@ -100,7 +100,7 @@
           {"label": ".eps", "value": "eps"},
           {"label": ".jpg", "value": "jpg"},
           {"label": ".gif", "value": "gif"},
-          {"label": ".png", "value": "png"},
+          {"label": ".png", "value": "png"}
         ]
       }, {
         "question": "How should the images be oriented?",
@@ -112,7 +112,7 @@
           {"label": "Vertical", "value": "Vertical"},
           {"label": "Square", "value": "Square"},
           {"label": "Panoramic Horizontal", "value": "PanoramicHorizontal"},
-          {"label": "Panoramic Vertical", "value": "PanoramicVertical"},
+          {"label": "Panoramic Vertical", "value": "PanoramicVertical"}
         ]
       }, {
         "question": "Do you want to only include Prestige content?",
@@ -127,7 +127,7 @@
         "choices": [
           {"label": "Fine Art", "value": "fine_art"},
           {"label": "Illustration", "value": "illustration"},
-          {"label": "Photography", "value": "photography"},
+          {"label": "Photography", "value": "photography"}
         ]
       }]
     }
