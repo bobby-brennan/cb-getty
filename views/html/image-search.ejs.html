@@ -6,21 +6,69 @@
 <%- Lucy.if('result.result_count == 0') %>
   No results found.
 <%- Lucy.fi('result.result_count == 0') %>
-<%- Lucy.for("image in result.images") %>
-  <div class="row">
-    <div class="col-xs-6">
+
+<div class="slider">
+  <%- Lucy.for("image in result.images") %>
+    <input type="radio" name="slide_switch" id="id<%- Lucy.variable('image.id') %>" checked/>
+    <label class="" for="id<%- Lucy.variable('image.id') %>">
+      <img src="<%- Lucy.variable("image.display_sizes[0].uri") %>" width="100"/>
+    </label>
+    <div class="show-image text-center">
+      <img src="<%- Lucy.variable("image.display_sizes[0].uri") %>"/>
       <h4><%- Lucy.variable("image.title") %></h4>
       <p><%- Lucy.variable("image.caption") %></p>
-<% if (Lucy.answer('similarImages')) { -%>
-      <a class="btn btn-primary"
-         <%- Lucy.click('similar-images', {imageID: Lucy.variableJS('image.id')}) %>>
-      Similar
-      </a>
-<% } -%>
     </div>
-    <div class="col-xs-4 col-xs-offset-2">
-      <img src="<%- Lucy.variable("image.display_sizes[0].uri") %>">
-    </div>
-  </div>
-  <hr>
-<%- Lucy.rof("image in result.images") %>
+  <%- Lucy.rof() %>
+</div>
+
+<style>
+
+.slider {
+  position: relative;
+  padding-top: 320;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider div .show-image{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.5s;
+}
+
+.slider div .show-image img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-height: 250px;
+  min-height: 100px;
+}
+
+.slider div input[name='slide_switch'] {
+  display: none;
+}
+
+.slider div label {
+  margin: 18px 0 0 18px;
+  border: 3px solid #999;
+  float: left;
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 0.6;
+}
+
+.slider div input[name='slide_switch']:checked+label {
+  border-color: #666;
+  opacity: 1;
+}
+.slider div input[name='slide_switch'] ~ .show-image {
+  opacity: 0;
+  transform: scale(1.1);
+}
+.slider div input[name='slide_switch']:checked+label+.show-image {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
