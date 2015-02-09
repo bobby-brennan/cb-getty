@@ -1,5 +1,6 @@
 {
   "name": "Getty",
+  "recipeList": ["imageSearch", "peopleSearch", "imageQuality"],
   "recipes": {
     "setup": {
       "questions": [{
@@ -88,7 +89,7 @@
       }]
     },
     "imageQuality": {
-      "label": "Image Quality and Size",
+      "label": "Image Quality and Type",
       "view": "image-search",
       "data": "search-images",
       "questions": [{
