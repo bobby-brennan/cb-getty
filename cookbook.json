@@ -1,5 +1,9 @@
 {
   "name": "Getty",
+  "languages": {
+    "client": ["html"],
+    "server": ["request"]
+  },
   "setup": {
     "questions": [{
       "question": "OK! I just need your Getty API keys to get started",
