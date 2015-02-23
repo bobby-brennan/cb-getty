@@ -1,27 +1,25 @@
 {
   "name": "Getty",
-  "recipeList": ["imageSearch", "peopleSearch", "imageQuality"],
-  "recipes": {
-    "setup": {
-      "questions": [{
-        "question": "OK! I just need your Getty API keys to get started",
-        "tip": "You can find your info at https://developer.gettyimages.com/apps/mykeys",
-        "label": "API Keys",
-        "type": "form",
-        "inputs": [{
-           "label": "Key",
-           "name": "apiKey",
-           "type": "string",
-           "required": true
-        }, {
-           "label": "Secret",
-           "name": "apiSecret",
-           "type": "string",
-           "required": true
-        }]
+  "setup": {
+    "questions": [{
+      "question": "OK! I just need your Getty API keys to get started",
+      "tip": "You can find your info at https://developer.gettyimages.com/apps/mykeys",
+      "label": "API Keys",
+      "type": "form",
+      "inputs": [{
+         "label": "Key",
+         "name": "apiKey",
+         "type": "string",
+         "required": true
+      }, {
+         "label": "Secret",
+         "name": "apiSecret",
+         "type": "string",
+         "required": true
       }]
-    },
-    "image_search": {
+    }]
+  },
+  "recipes": [{
       "label": "Image Search",
       "actions": ["search_images"],
       "views": ["image_search"],
@@ -49,8 +47,7 @@
           {"label": "Editorial", "value": "editorial"}
         ]
       }]
-    },
-    "people_search": {
+    }, {
       "label": "Images of People",
       "actions": ["search_images"],
       "views": ["image_search"],
@@ -99,8 +96,7 @@
           {"label": "Southeast Asian", "value": "southeast_asian"}
         ]
       }]
-    },
-    "image_quality": {
+    }, {
       "label": "Image Quality and Type",
       "actions": ["search_images"],
       "views": ["image_search"],
@@ -151,5 +147,5 @@
         ]
       }]
     }
-  }
+  }]
 }
