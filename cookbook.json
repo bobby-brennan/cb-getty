@@ -21,10 +21,16 @@
         }]
       }]
     },
-    "imageSearch": {
+    "image_search": {
       "label": "Image Search",
-      "view": "image-search",
-      "data": "search-images",
+      "actions": ["search_images"],
+      "views": ["image_search"],
+      "main": {
+        "view": "search_images",
+        "data": {
+          "action": "image_search"
+        }
+      },
       "questions": [{
         "question": "What should the query be?",
         "label": "Query",
@@ -44,10 +50,16 @@
         ]
       }]
     },
-    "peopleSearch": {
+    "people_search": {
       "label": "Images of People",
-      "view": "image-search",
-      "data": "search-images",
+      "actions": ["search_images"],
+      "views": ["image_search"],
+      "main": {
+        "view": "search_images",
+        "data": {
+          "action": "image_search"
+        }
+      },
       "questions": [ {
         "question": "Do you want to search for images of specific people?",
         "tip": "Names should be comma separated. Try barack_obama or lady_gaga,beyonce",
@@ -88,10 +100,16 @@
         ]
       }]
     },
-    "imageQuality": {
+    "image_quality": {
       "label": "Image Quality and Type",
-      "view": "image-search",
-      "data": "search-images",
+      "actions": ["search_images"],
+      "views": ["image_search"],
+      "main": {
+        "view": "search_images",
+        "data": {
+          "action": "image_search"
+        }
+      },
       "questions": [{
         "question": "Which filetypes do you want to include",
         "name": "file_types",
