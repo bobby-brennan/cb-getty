@@ -20,132 +20,131 @@
     }]
   },
   "recipes": [{
-      "label": "Image Search",
-      "actions": ["search_images"],
-      "views": ["image_search"],
-      "main": {
-        "view": "search_images",
-        "data": {
-          "action": "image_search"
-        }
-      },
-      "questions": [{
-        "question": "What should the query be?",
-        "label": "Query",
-        "name": "query",
-        "type": "string",
-        "userInput": true
-      }, {
-        "question": "Do you want Creative or Editorial images?",
-        "tip": "Editorial images are for non-commercial use; Creative images can be used in any context.",
-        "label": "Creative/Editorial",
-        "name": "creativeOrEditorial",
-        "type": "buttonSet",
-        "choices": [
-          {"label": "Both", "value": "both"},
-          {"label": "Creative", "value": "creative"},
-          {"label": "Editorial", "value": "editorial"}
-        ]
-      }]
+    "label": "Image Search",
+    "actions": ["search_images"],
+    "views": ["image_search"],
+    "main": {
+      "view": "search_images",
+      "data": {
+        "action": "image_search"
+      }
+    },
+    "questions": [{
+      "question": "What should the query be?",
+      "label": "Query",
+      "name": "query",
+      "type": "string",
+      "userInput": true
     }, {
-      "label": "Images of People",
-      "actions": ["search_images"],
-      "views": ["image_search"],
-      "main": {
-        "view": "search_images",
-        "data": {
-          "action": "image_search"
-        }
-      },
-      "questions": [ {
-        "question": "Do you want to search for images of specific people?",
-        "tip": "Names should be comma separated. Try barack_obama or lady_gaga,beyonce",
-        "name": "specific_people",
-        "label": "Names",
-        "type": "string"
-      }, {
-        "question": "How many people should be in the images?",
-        "name": "number_of_people",
-        "label": "Number",
-        "type": "array",
-        "default": ["one"],
-        "choices": [
-          {"label": "None", "value": "none"},
-          {"label": "One", "value": "one"},
-          {"label": "Two", "value": "two"},
-          {"label": "Group", "value": "group"}
-        ]
-      }, {
-        "question": "Which ethnicities do you want to include?",
-        "tip": "Select none to include all ethnicities",
-        "name": "ethnicity",
-        "label": "Ethnicity",
-        "type": "array",
-        "choices": [
-          {"label": "Black", "value": "black"},
-          {"label": "Caucasian", "value": "caucasian"},
-          {"label": "East Asian", "value": "east_asian"},
-          {"label": "Hispanic/Latino", "value": "hispanic_latino"},
-          {"label": "Japanese", "value": "japanese"},
-          {"label": "Middle Eastern", "value": "middle_eastern"},
-          {"label": "Multiracial Person", "value": "mixed_race_person"},
-          {"label": "Multiethnic Group", "value": "multiethnic_group"},
-          {"label": "Native American", "value": "native_american_first_nations"},
-          {"label": "Pacific Islander", "value": "pacific_islander"},
-          {"label": "South Asian", "value": "south_asian"},
-          {"label": "Southeast Asian", "value": "southeast_asian"}
-        ]
-      }]
+      "question": "Do you want Creative or Editorial images?",
+      "tip": "Editorial images are for non-commercial use; Creative images can be used in any context.",
+      "label": "Creative/Editorial",
+      "name": "creativeOrEditorial",
+      "type": "buttonSet",
+      "choices": [
+        {"label": "Both", "value": "both"},
+        {"label": "Creative", "value": "creative"},
+        {"label": "Editorial", "value": "editorial"}
+      ]
+    }]
+  }, {
+    "label": "Images of People",
+    "actions": ["search_images"],
+    "views": ["image_search"],
+    "main": {
+      "view": "search_images",
+      "data": {
+        "action": "image_search"
+      }
+    },
+    "questions": [ {
+      "question": "Do you want to search for images of specific people?",
+      "tip": "Names should be comma separated. Try barack_obama or lady_gaga,beyonce",
+      "name": "specific_people",
+      "label": "Names",
+      "type": "string"
     }, {
-      "label": "Image Quality and Type",
-      "actions": ["search_images"],
-      "views": ["image_search"],
-      "main": {
-        "view": "search_images",
-        "data": {
-          "action": "image_search"
-        }
-      },
-      "questions": [{
-        "question": "Which filetypes do you want to include",
-        "name": "file_types",
-        "label": "File types",
-        "type": "array",
-        "choices": [
-          {"label": ".eps", "value": "eps"},
-          {"label": ".jpg", "value": "jpg"},
-          {"label": ".gif", "value": "gif"},
-          {"label": ".png", "value": "png"}
-        ]
-      }, {
-        "question": "How should the images be oriented?",
-        "name": "orientations",
-        "label": "Orientations",
-        "type": "array",
-        "choices": [
-          {"label": "Horizontal", "value": "Horizontal"},
-          {"label": "Vertical", "value": "Vertical"},
-          {"label": "Square", "value": "Square"},
-          {"label": "Panoramic Horizontal", "value": "PanoramicHorizontal"},
-          {"label": "Panoramic Vertical", "value": "PanoramicVertical"}
-        ]
-      }, {
-        "question": "Do you want to only include Prestige content?",
-        "tip": "Prestige content is created by award-winning photographers and art directors and curated by our leading editors.",
-        "label": "Prestige only",
-        "name": "prestige_content_only",
-        "type": "boolean"
-      }, {
-        "question": "What kind of graphical styles do you want?",
-        "label": "Graphical Styles",
-        "name": "graphical_styles",
-        "type": "array",
-        "choices": [
-          {"label": "Fine Art", "value": "fine_art"},
-          {"label": "Illustration", "value": "illustration"},
-          {"label": "Photography", "value": "photography"}
-        ]
-      }]
-    }
+      "question": "How many people should be in the images?",
+      "name": "number_of_people",
+      "label": "Number",
+      "type": "array",
+      "default": ["one"],
+      "choices": [
+        {"label": "None", "value": "none"},
+        {"label": "One", "value": "one"},
+        {"label": "Two", "value": "two"},
+        {"label": "Group", "value": "group"}
+      ]
+    }, {
+      "question": "Which ethnicities do you want to include?",
+      "tip": "Select none to include all ethnicities",
+      "name": "ethnicity",
+      "label": "Ethnicity",
+      "type": "array",
+      "choices": [
+        {"label": "Black", "value": "black"},
+        {"label": "Caucasian", "value": "caucasian"},
+        {"label": "East Asian", "value": "east_asian"},
+        {"label": "Hispanic/Latino", "value": "hispanic_latino"},
+        {"label": "Japanese", "value": "japanese"},
+        {"label": "Middle Eastern", "value": "middle_eastern"},
+        {"label": "Multiracial Person", "value": "mixed_race_person"},
+        {"label": "Multiethnic Group", "value": "multiethnic_group"},
+        {"label": "Native American", "value": "native_american_first_nations"},
+        {"label": "Pacific Islander", "value": "pacific_islander"},
+        {"label": "South Asian", "value": "south_asian"},
+        {"label": "Southeast Asian", "value": "southeast_asian"}
+      ]
+    }]
+  }, {
+    "label": "Image Quality and Type",
+    "actions": ["search_images"],
+    "views": ["image_search"],
+    "main": {
+      "view": "search_images",
+      "data": {
+        "action": "image_search"
+      }
+    },
+    "questions": [{
+      "question": "Which filetypes do you want to include",
+      "name": "file_types",
+      "label": "File types",
+      "type": "array",
+      "choices": [
+        {"label": ".eps", "value": "eps"},
+        {"label": ".jpg", "value": "jpg"},
+        {"label": ".gif", "value": "gif"},
+        {"label": ".png", "value": "png"}
+      ]
+    }, {
+      "question": "How should the images be oriented?",
+      "name": "orientations",
+      "label": "Orientations",
+      "type": "array",
+      "choices": [
+        {"label": "Horizontal", "value": "Horizontal"},
+        {"label": "Vertical", "value": "Vertical"},
+        {"label": "Square", "value": "Square"},
+        {"label": "Panoramic Horizontal", "value": "PanoramicHorizontal"},
+        {"label": "Panoramic Vertical", "value": "PanoramicVertical"}
+      ]
+    }, {
+      "question": "Do you want to only include Prestige content?",
+      "tip": "Prestige content is created by award-winning photographers and art directors and curated by our leading editors.",
+      "label": "Prestige only",
+      "name": "prestige_content_only",
+      "type": "boolean"
+    }, {
+      "question": "What kind of graphical styles do you want?",
+      "label": "Graphical Styles",
+      "name": "graphical_styles",
+      "type": "array",
+      "choices": [
+        {"label": "Fine Art", "value": "fine_art"},
+        {"label": "Illustration", "value": "illustration"},
+        {"label": "Photography", "value": "photography"}
+      ]
+    }]
   }]
 }
