@@ -4,7 +4,7 @@
   "recipes": {
     "setup": {
       "questions": [{
-        "question": "OK! I just need your Getty Connect API keys to get started",
+        "question": "OK! I just need your Getty API keys to get started",
         "tip": "You can find your info at https://developer.gettyimages.com/apps/mykeys",
         "label": "API Keys",
         "type": "form",
